@@ -32,7 +32,9 @@
 								Tracks</span>
 							|
 							<span>{{ mix.genre }}</span>
-							<span>{{ mix.createdAt | date('d-m-Y') }}</span>
+							|
+							<span>Created:
+								{{ mix.createdAt | ago }}</span>
 						</div>
 					</div>
 				{% endfor %}

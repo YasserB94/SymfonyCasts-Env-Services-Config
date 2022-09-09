@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Knp\Bundle\TimeBundle\DateTimeFormatter;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -28,11 +29,17 @@ class VinylController extends AbstractController
     }
 
     #[Route('/browse/{slug}', name: 'app_browse')]
-    public function browse(string $slug = null): Response
+    /**
+     * browse
+     *
+     * @param  mixed $timeFormatter
+     * @param  mixed $slug
+     * @return Response
+     */
+    public function browse(DateTimeFormatter $timeFormatter, string $slug = null): Response
     {
         $genre = $slug ? u(str_replace('-', ' ', $slug))->title(true) : null;
         $mixes = $this->getMixes();
-
         return $this->render('vinyl/browse.html.twig', [
             'genre' => $genre,
             'mixes' => $mixes,
