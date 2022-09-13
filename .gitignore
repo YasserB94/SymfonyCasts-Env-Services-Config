@@ -205,6 +205,9 @@ dist
 !bin/symfony_requirements
 /vendor/
 
+# Vault
+/config/secrets/prod/prod.decrypt.private.php
+
 # Assets and user uploads
 /web/bundles/
 /web/uploads/
