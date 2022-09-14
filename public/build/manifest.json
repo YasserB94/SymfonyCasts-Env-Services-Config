@@ -19,5 +19,11 @@
   "build/fonts/roboto-condensed-greek-400-normal.woff2": "/build/fonts/roboto-condensed-greek-400-normal.a11231a2.woff2",
   "build/fonts/roboto-condensed-vietnamese-400-normal.woff2": "/build/fonts/roboto-condensed-vietnamese-400-normal.edbb62e5.woff2",
   "build/fonts/fa-v4compatibility.woff2": "/build/fonts/fa-v4compatibility.afac8956.woff2",
-  "build/fonts/roboto-condensed-greek-ext-400-normal.woff2": "/build/fonts/roboto-condensed-greek-ext-400-normal.5df01ae6.woff2"
+  "build/fonts/roboto-condensed-greek-ext-400-normal.woff2": "/build/fonts/roboto-condensed-greek-ext-400-normal.5df01ae6.woff2",
+  "build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-79fac2.css": "/build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-79fac2.css",
+  "build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-79fac2.js": "/build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-79fac2.js",
+  "build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-cc5815.css": "/build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-cc5815.css",
+  "build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-cc5815.js": "/build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-cc5815.js",
+  "build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-c1c98d.css": "/build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-c1c98d.css",
+  "build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-c1c98d.js": "/build/vendors-node_modules_hotwired_turbo_dist_turbo_es2017-esm_js-node_modules_symfony_stimulus-br-c1c98d.js"
 }

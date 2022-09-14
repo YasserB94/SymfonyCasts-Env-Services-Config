@@ -33,7 +33,7 @@ class VinylMix
     private int $votes = 0;
 
 
-    //!---CONSTRUCTOR--!
+    //!---CONSTRUCTOR--!//
     public function __construct()
     {
         $this->createdAt = new \DateTimeImmutable();
