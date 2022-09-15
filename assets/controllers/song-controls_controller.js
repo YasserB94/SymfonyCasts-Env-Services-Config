@@ -15,10 +15,8 @@ export default class extends Controller {
   static values = {
     infoUrl: String,
   };
-
   async play(event) {
     event.preventDefault();
-    console.log(this.element)
     event.target.classList.toggle("fa-play");
     event.target.classList.toggle("fa-pause");
     if (this.element.audio) {
