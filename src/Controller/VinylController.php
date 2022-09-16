@@ -5,14 +5,14 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Services\MixRepository;
+use App\Repository\VinylMixRepository;
 
 use function Symfony\Component\String\u;
 
 class VinylController extends AbstractController
 {
     public function __construct(
-        private MixRepository $mixRepository,
+        private VinylMixRepository $mixRepository,
         private bool $isDebug,
     ) {
     }
@@ -40,7 +40,7 @@ class VinylController extends AbstractController
     public function browse(string $slug = null): Response
     {
         $genre = $slug ? u(str_replace('-', ' ', $slug))->title(true) : null;
-        $mixes = $this->mixRepository->findAll();
+        $mixes = $this->mixRepository->findAllOrderedByVotes($slug);
         return $this->render('vinyl/browse.html.twig', [
             'genre' => $genre,
             'mixes' => $mixes,
