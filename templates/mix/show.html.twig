@@ -19,6 +19,16 @@
 						{{mix.genre}})</small>
 				</h2>
 				<p>{{mix.description}}</p>
+				<p>{{mix.votesString}}
+					votes</p>
+				<form action="{{ path('app_mix_vote',{id:mix.id}) }}" method="POST">
+					<button type="submit" name="direction" value="up" class="btn btn-outline-primary">
+						<span class="fa fa-thumbs-up"></span>
+					</button>
+					<button type="submit" name="direction" value="down" class="btn btn-outline-primary">
+						<span class="fa fa-thumbs-down"></span>
+					</button>
+				</form>
 			</div>
 		</div>
 	</div>
